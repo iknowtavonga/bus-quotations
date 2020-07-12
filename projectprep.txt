@@ -1,0 +1,37 @@
+Pages 3
+    -Home
+    -Quotation
+    -Schedule
+
+Home
+    Basic Informative page of the bus company with the following sections
+    -Header
+        -Navigation
+    -Welcome section
+        -Heading (Welcome to Buscorp)
+        -Paragraph 
+    -Vision of company
+        -Paragraph
+    -Mission Statement
+        -paragraph
+    -Showcase
+    -Testimonials
+    -Newsletter
+    -Footer
+
+Quotation
+    This page is for booking a bus. It will contain a form with the following fields.
+    -Heading Company Details)
+    -Company Name
+    -Company Registration Number
+    -Tax Number
+     
+     Section Break
+    -Heading (Trip Details)
+    -Trip Date & Time
+    -Pick-up Address
+    -Destination Address
+    -Bus Type (30 seater, 50 seater, 70 seater)
+    -Get Quotation Button
+
+Schedule
