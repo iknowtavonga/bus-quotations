@@ -14,24 +14,38 @@ Home
         -Paragraph
     -Mission Statement
         -paragraph
+    -Newsletter
     -Showcase
     -Testimonials
-    -Newsletter
     -Footer
 
 Quotation
     This page is for booking a bus. It will contain a form with the following fields.
-    -Heading Company Details)
-    -Company Name
-    -Company Registration Number
-    -Tax Number
+    -Company Details
+        -Company Name
+        -Company Registration Number
+        -Tax Number
+        -Contact Name
+        -Contact Surname
+        -Contact Email Address
+        -Contact Number
      
-     Section Break
     -Heading (Trip Details)
-    -Trip Date & Time
+    -Trip Start Date , Trip end date
     -Pick-up Address
     -Destination Address
     -Bus Type (30 seater, 50 seater, 70 seater)
+    -Number of buses
     -Get Quotation Button
 
 Schedule
+
+    -Scheduled Trips Table
+cols    -Ticket Number (this is for the company to track) 
+        -Depot departure time
+        -Pickup arrival time
+        -Pickup departure time
+        -Destination arrival time
+
+Updates
+- added a contact us button to the header

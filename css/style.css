@@ -1,12 +1,15 @@
+/*Global*/
+html{
+    margin: 0;
+    padding: 0;
+}
 body{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.5em;
     padding: 0;
     margin: 0;
     font-family: 'Varela Round', sans-serif;
-   /* background-color: rgb(168, 213,157);
-    color: #ffffff;*/
+    box-sizing: border-box;
 }
 
 .container{
@@ -14,30 +17,114 @@ body{
     margin: auto;
     overflow: none;
 }
-
+/*Do not put a container tag on the header because the flex will not work well with the navigation*/
 header{
-    border-bottom: 2px solid black;
+    border-bottom: 5px solid rgba(129, 178, 154, 1);
+    background-color: rgba(61, 64, 91, 1); 
+    /*The code below fixed all nav issues you had*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
     font-family: 'Vollkorn', serif;
-}
-
-.navigation{
-    float:right;
-}
-
-.navigation ul{
+    cursor: pointer;
+    color: rgba(224, 122, 95, 1);
     text-transform: uppercase;
+    margin-left: 50px;
 }
 
-.navigation ul li a{
+.navigation li, a{
+    font-family: 'Varela Round', sans-serif;
     text-decoration: none;
-    color: #000000;
-}
-
-.navigation ul li{
-    display: inline-block;
-    padding-left: 15px;  
+    color: rgba(244, 241, 222, 1);
 }
 
 .currentPage{
+    font-weight: bold;
+    color: rgba(224, 122, 95, 1);
+}
 
+.navigation ul{
+    /*list style none removes the dots from lists*/
+    list-style: none;
+}
+
+.navigation li{
+    display: inline-block;
+    padding-right: 25px;
+    text-transform: uppercase;
+}
+
+.navigation li a{
+    transition: all 0.3s ease 0s;
+}
+
+.navigation li a:hover{
+    font-weight: bold;
+    color: rgba(224, 122, 95, 1);
+}
+
+button{
+    margin-right: 50px;
+    padding: 9px 25px;
+    text-transform: uppercase;
+    background-color:rgba(224, 122, 95, 1);
+    color: rgba(244, 241, 222, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover{
+    size: 1.2em;
+    font-weight: bold;
+}
+
+footer{
+    min-height: 50px;
+    border-top: 5px solid rgba(129, 178, 154, 1);
+    background-color: rgba(61, 64, 91, 1);
+    color: rgba(244, 241, 222, 1);
+    display: flex;
+    justify-content: center;
+}
+
+/*Newsletter*/
+
+#newsletter{
+    min-height: 60px;
+    background-color: rgba(61, 64, 91, 1);
+    border-top: 5px solid rgba(129, 178, 154, 1);
+    border-bottom: 5px solid rgba(129, 178, 154, 1);
+}
+
+#newsletter form{
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+}
+
+#newsletter form label{
+    font-size: 19px;
+    color: rgba(244, 241, 222, 1);
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-right: auto;
+}
+
+#newsletter form input{
+    border: none;
+    border-radius: 5px;
+    width: 400px;
+}
+/*Is it possible to change the font of the placeholder text in an input box*/
+
+/*#newsletter form input ::placeholder{
+    font-family: 'Varela Round', sans-serif;
+}*/
+
+.subscribeButton{
+    margin-left: 40px;
 }

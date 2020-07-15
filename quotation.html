@@ -12,17 +12,16 @@
     </head>
     <body>
         <header>
-            <div class="container">
-                <nav class="navigation">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li class="currentPage"><a href="quotation.html">Quotation</a></li>
-                        <li><a href="schedule.html">Schedule</a></li>
-                    </ul>
-                </nav> 
-                <h1 id="logo">Buscorp</h1>  
-            </div>        
-        </header>    
+            <a href="index.html"><h1 id="logo">Buscorp</h1></a>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="currentPage"><a href="quotation.html">Quotation</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                </ul>
+            </nav>   
+            <a class="contactButton" href="contact.html"><button>Contact Us</button></a>        
+    </header>     
         <main class="container">
             <h2>Bus Booking Quotation</h2>
             <p>Thank you for choosing Buscorp! please fill in the quotation fom below in order for us to generate a quotation for you.</p>
@@ -99,7 +98,7 @@
                 <form>
                     <label for="newsletterEmail">Subscribe to our newsletter</label>
                     <input type="email" id="newsletterEmail" placeholder="Enter email address">
-                    <input type="submit" value="Subscribe">
+                    <button class="subscribeButton">Subscribe</button>
                 </form>
             </div>
         </section>
@@ -110,9 +109,7 @@
             </div>
         </section>
         <footer>
-            <div class="container">
-                <p>BusCorp Pyt &trade; Copyright &copy; 2020</p>
-            </div>
-        </footer>
+            <p>BusCorp Pyt &trade; Copyright &copy; 2020</p>
+    </footer>
     </body>
 </html>
