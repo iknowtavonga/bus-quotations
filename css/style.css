@@ -28,7 +28,7 @@ header{
 }
 
 #logo{
-    font-family: 'Vollkorn', serif;
+    font-family: 'Kaushan Script', cursive;
     cursor: pointer;
     color: rgba(224, 122, 95, 1);
     text-transform: uppercase;
@@ -127,4 +127,14 @@ footer{
 
 .subscribeButton{
     margin-left: 40px;
+}
+
+/*Showcase*/
+
+#showcase{
+    margin-top: 0;
+    height: 500px;
+    background-image: url('../img/showcase.jpg');
+    background-position: center;
+    background-size: cover;
 }
