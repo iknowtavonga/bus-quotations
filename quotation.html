@@ -23,65 +23,69 @@
             <a class="contactButton" href="contact.html"><button>Contact Us</button></a>        
     </header>     
         <main class="container">
-            <h2>Bus Booking Quotation</h2>
-            <p>Thank you for choosing S-Transit! please fill in the quotation fom below in order for us to generate a quotation for you.</p>
-            <form action="POST" id="classForm">
-                <section id="companyDetails">
-                    <h3>Company Details</h3>
-                    <label for="companyName">Company Name</label>
-                    <input type="text" id="companyName" name="companyName" required>
-                    <br>
-                    <label for="companyRegistration">Company Registration Number</label>
-                    <input type="text" id="companyRegistration" name="companyRegistration">
-                    <br>
-                    <label for="taxNumber">Tax Number</label>
-                    <input type="number" id="taxNumber" name="taxNumber">
+            <form class="quotationForm" action="./" method="POST">
+                <h2>Bus Booking Quotation</h2>
+                <p>Thank you for choosing S-Transit! please fill in your details in the form below in order for us to generate a quotation for you.</p>
+                
+                <section class="companyDetails">
+                    <h3 class="formHeading">Company Details</h3>
+                    <label class="quotationLabel" for="companyName">Company Name</label>
+                    <input class="quotationInput" type="text" id="companyName" name="companyName" required>
+
+                    <label class="quotationLabel" for="companyRegistration">Company Registration Number</label>
+                    <input class="quotationInput" type="text" id="companyRegistration" name="companyRegistration">
+
+                    <label class="quotationLabel" for="taxNumber">Tax Number</label>
+                    <input class="quotationInput" type="number" id="taxNumber" name="taxNumber">
                 </section>
-                <section id="contactDetails">
-                    <h3>Contact Details</h3>
-                    <label for="contactName">Contact Name</label>
-                    <input type="text" id="contactName" name="contactName" required>
-                    <br>
-                    <label for="contactSurname">Contact Surname</label>
-                    <input type="text" id="contactSurname" name="contactSurname" required>
-                    <br>
-                    <label for="contactEmail">Contact Email Address</label>
-                    <input type="email" id="contactEmail" name="contactEmail" required>
-                    <br>
-                    <label for="contactNumber">Contact Number</label>
-                    <input type="number" id="contactNumber" name="contactNumber" minlength="10" maxlength="10" required>
+                
+                <section class="contactDetails">
+                    <h3 class="formHeading">Contact Details</h3>
+                    <label class="quotationLabel" for="contactName">Contact Name</label>
+                    <input class="quotationInput" type="text" id="contactName" name="contactName" placeholder="Enter your name" required>
+
+                    <label class="quotationLabel" for="contactSurname">Contact Surname</label>
+                    <input class="quotationInput" type="text" id="contactSurname" name="contactSurname" placeholder="Enter your surname" required>
+                    
+                    <label class="quotationLabel" for="contactEmail">Contact Email Address</label>
+                    <input class="quotationInput" type="email" id="contactEmail" name="contactEmail" placeholder="Enter your email address" required>
+                    
+                    <label class="quotationLabel" for="contactNumber">Contact Number</label>
+                    <input class="quotationInput" type="number" id="contactNumber" name="contactNumber" minlength="10" maxlength="10" placeholder="Enter your phone number" required>
                 </section>
-                <section id="tripDetails">
-                    <h3>Trip Details</h3>
-                    <label for="tripStartDate">First Pickup Date</label>
-                    <input type="date" id="tripStartDate" name="tripStartDate" required>
-                    <br>
-                    <label for="tripEndDate">Second Pickup Date</label>
-                    <input type="date" id="tripEndDate" name="tripEndDate">
-                    <br>
-                    <label for="pickupTime">Pickup Time</label>
-                    <input type="time" id="pickupTime" name="pickupTime">
-                    <br>
-                    <label for="pickupAddress">Pickup Address</label>
-                    <input type="text" id="pickupAddress" name="pickupAddressLine1" placeholder="Address Line 1" required>
-                    <br>
-                    <input type="text" id="pickupAddress" name="pickupAddressLine2" placeholder="Address Line 2" required>
-                    <br>
-                    <input type="text" id="pickupAddress" name="pickupAddressLine3" placeholder="Address Line 3">
-                    <br>
-                    <input type="number" id="pickupPostalCode" name="pickupPostalCode" maxlength="4" placeholder="Postal Code" required>
-                    <br>
-                    <label for="drop-offAddress">Drop-off Address</label>
-                    <input type="text" id="drop-offAddress" name="drop-offAddressLine1" placeholder="Address Line 1" required>
-                    <br>
-                    <input type="text" id="drop-offAddress" name="drop-offAddressLine2" placeholder="Address Line 2" required>
-                    <br>
-                    <input type="text" id="drop-offAddress" name="drop-offAddressLine3" placeholder="Address Line 3">
-                    <br>
-                    <input type="number" id="drop-offPostalCode" name="drop-offPostalCode" maxlength="4" placeholder="Postal Code" required>
+               
+                <section class="tripDetails">
+                    <h3 class="formHeading">Trip Details</h3>
+                    <label class="quotationLabel" for="tripStartDate">First Pickup Date</label>
+                    <input class="quotationInput" type="date" id="tripStartDate" name="tripStartDate" required>
+                   
+                    <label class="quotationLabel" for="tripEndDate">Second Pickup Date</label>
+                    <input class="quotationInput" type="date" id="tripEndDate" name="tripEndDate">
+                    
+                    <label class="quotationLabel" for="pickupTime">Pickup Time</label>
+                    <input class="quotationInput" type="time" id="pickupTime" name="pickupTime">
+                    
+                    <label class="quotationLabel" for="pickupAddress">Pickup Address</label>
+                    <input class="quotationInput addressInput" type="text" id="pickupAddress" name="pickupAddressLine1" placeholder="Address Line 1" required>
+                    
+                    <input class="quotationInput addressInput" type="text" id="pickupAddress" name="pickupAddressLine2" placeholder="Address Line 2" required>
+                   
+                    <input class="quotationInput addressInput" type="text" id="pickupAddress" name="pickupAddressLine3" placeholder="Address Line 3">
+                    
+                    <input class="quotationInput addressInput" type="number" id="pickupPostalCode" name="pickupPostalCode" maxlength="4" placeholder="Postal Code" required>
+                    
+                    <label class="quotationLabel" for="drop-offAddress">Drop-off Address</label>
+                    <input class="quotationInput addressInput" type="text" id="drop-offAddress" name="drop-offAddressLine1" placeholder="Address Line 1" required>
+                    
+                    <input class="quotationInput addressInput" type="text" id="drop-offAddress" name="drop-offAddressLine2" placeholder="Address Line 2" required>
+                  
+                    <input class="quotationInput addressInput" type="text" id="drop-offAddress" name="drop-offAddressLine3" placeholder="Address Line 3">
+                    
+                    <input class="quotationInput addressInput" type="number" id="drop-offPostalCode" name="drop-offPostalCode" maxlength="4" placeholder="Postal Code" required>
                 </section>
+
                 <section id="busDetails">
-                    <h3>Bus Details</h3>
+                    <h3 class="formHeading">Bus Details</h3>
                     <!--<label for="busAmount">Amount of buses to be booked</label>
                     <select id="busAmount" name="busAmount">
                     <datalist id="busAmount">
@@ -97,7 +101,7 @@
             <div class="container">
                 <form>
                     <label for="newsletterEmail">Subscribe to our newsletter</label>
-                    <input type="email" id="newsletterEmail" placeholder="Enter email address">
+                    <input class="newsletterInput" type="email" id="newsletterEmail" placeholder="Enter email address">
                     <button class="subscribeButton">Subscribe</button>
                 </form>
             </div>

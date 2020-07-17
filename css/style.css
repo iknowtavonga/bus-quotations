@@ -94,7 +94,7 @@ footer{
 /*Newsletter*/
 
 #newsletter{
-    min-height: 60px;
+    min-height: 80px;
     background-color: rgba(61, 64, 91, 1);
     border-top: 5px solid rgba(129, 178, 154, 1);
     border-bottom: 5px solid rgba(129, 178, 154, 1);
@@ -102,31 +102,53 @@ footer{
 
 #newsletter form{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     margin-top: 13px;
 }
 
+#newsletter *{
+    align-self: flex-start;  
+}
+
 #newsletter form label{
+    justify-content: center;
+    margin-top: 17px;
     font-size: 19px;
     color: rgba(244, 241, 222, 1);
     text-transform: uppercase;
-    margin-top: 5px;
+   
     margin-right: auto;
 }
 
+.newsletterInput{
+    -webkit-appearance: none;
+    width: 100%;
+    max-width: 425px;
+    /*Fix for iOS devices for date input heights*/
+    min-height: calc(0.9em + (0.5em * 2) + 0.6em);
+    padding: 0.5em;
+    font-size: 0.9em;
+    outline: none;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    background: #f9f9f9;
+}/*
 #newsletter form input{
     border: none;
     border-radius: 5px;
     width: 400px;
-}
-/*Is it possible to change the font of the placeholder text in an input box*/
-
-/*#newsletter form input ::placeholder{
-    font-family: 'Varela Round', sans-serif;
+    justify-content: center;
 }*/
 
+/*Is it possible to change the font of the placeholder text in an input box*/
+    /*Answer: YES 
+    .inputclass::placeholder{
+        font-family: xoxo;
+    }*/
+
 .subscribeButton{
-    margin-left: 40px;
+    margin-left: auto;
+    margin-top: 12px;
 }
 
 /*Showcase*/
@@ -137,4 +159,77 @@ footer{
     background-image: url('../img/showcase.jpg');
     background-position: center;
     background-size: cover;
+}
+
+/* Quotation Page*/
+
+.formHeading{
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.quotationLabel{
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.quotationInput{
+    -webkit-appearance: none;
+    width: 100%;
+    max-width: 425px;
+    /*Fix for iOS devices for date input heights*/
+    min-height: calc(0.9em + (0.8em * 2) + 0.6em);
+    padding: 0.8em;
+    font-size: 0.9em;
+    outline: none;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+.quotationInput:focus{
+    background: #ffffff;
+}
+
+.quotationInput::placeholder{
+    color: #dddddd;
+    font-family: 'Varela Round', sans-serif;
+}
+/*Company Details section*/
+.quotationForm *{
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+.companyDetails{
+    display: flex;
+    flex-direction: column;
+}
+
+.companyDetails *{
+    align-self: flex-start;
+}
+
+/*Contact Details*/
+.contactDetails{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactDetails *{
+    align-self: flex-start;
+}
+
+/*tripDetails*/
+.tripDetails{
+    display: flex;
+    flex-direction: column;
+}
+
+.tripDetails *{
+    align-self: flex-start;
+}
+
+.addressInput{
+    margin: 10px 0;
 }
