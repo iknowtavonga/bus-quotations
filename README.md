@@ -1,1 +1,3 @@
-# bus-quotations
+# Bus Company Quotation Form
+---
+## Basic Structure
