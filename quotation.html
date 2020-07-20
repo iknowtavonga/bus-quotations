@@ -17,10 +17,10 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li class="currentPage"><a href="quotation.html">Quotation</a></li>
-                    <li><a href="schedule.html">Schedule</a></li>
+                    <a class="contactButton" href="contact.html"><button>Contact Us</button></a> 
                 </ul>
             </nav>   
-            <a class="contactButton" href="contact.html"><button>Contact Us</button></a>        
+                   
     </header>     
         <main class="container">
             <form class="quotationForm" action="./" method="POST">
@@ -86,17 +86,17 @@
 
                 <section id="busDetails">
                     <h3 class="formHeading">Bus Details</h3>
-                    <!--<label for="busAmount">Amount of buses to be booked</label>
-                    <select id="busAmount" name="busAmount">
-                    <datalist id="busAmount">
-                        <option value="1">1</option>
-                        <option value="2"></option>
-                    </datalist>-->
-
+                    <label class="quotationLabel" for="busSeats">Bus Seats</label>
+                    <select class="quotationSelect" id="busSeats" name="busSeats"> 
+                        <option value="30 Seater">30 Seater</option>
+                        <option value="45 Seater">45 Seater</option>
+                        <option value="55 Seater">55 Seater</option>
+                        <option value="70 Seater">70 Seater</option>
+                    </select>
                 </section>
+                <button class="formButton">Generate quotation</button>
             </form>
         </main>
-        <br>
         <section id="newsletter">
             <div class="container">
                 <form>

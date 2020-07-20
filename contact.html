@@ -17,13 +17,32 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="quotation.html">Quotation</a></li>
-                    <li><a href="schedule.html">Schedule</a></li>
+                    <a class="contactButton currentPage" href="contact.html"><button>Contact Us</button></a> 
                 </ul>
-            </nav>   
-            <a class="contactButton currentPage" href="contact.html"><button>Contact Us</button></a>        
+            </nav>                
     </header> 
-    <main>
+    <main class="container">
+        <form class="contactForm">
+            <h2>Contact Us</h2>
+            <p>If you would like to enquire on our services or have a custom quotation generated for you, please fill in your details below and one of our agents will contact you shortly.</p>
+            <section class="contactUsDetails">
+                <label class="contactLabel" for="contactUsName">Contact Name</label>
+                <input class="contactInput" type="text" id="contactUsName" name="contactUsName" placeholder="Enter your name" required>
 
+                <label class="contactLabel" for="contactUsSurname">Contact Surname</label>
+                <input class="contactInput" type="text" id="contactUsSurname" name="contactUsSurname" placeholder="Enter your surname" required>
+                
+                <label class="contactLabel" for="contactUsEmail">Contact Email Address</label>
+                <input class="contactInput" type="email" id="contactUsEmail" name="contactUsEmail" placeholder="Enter your email address" required>
+                
+                <label class="contactLabel" for="contactUsNumber">Contact Number</label>
+                <input class="contactInput" type="number" id="contactUsNumber" name="contactUsNumber" minlength="10" maxlength="10" placeholder="Enter your phone number" required>
+
+                <label class="contactLabel" for="contactUsMessage">Leave a message</label>
+                <textarea class="contactTextarea" id="contactUsMessage" name="contactUsMessage"></textarea>
+            </section>
+            <button class="formButton">Submit</button>
+        </form>
     </main>
     <section id="newsletter">
         <div class="container">
