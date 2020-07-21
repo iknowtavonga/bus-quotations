@@ -13,3 +13,7 @@ The home page contains the basic details of the company. These include:
  * Company vision
  * Newsletter subscription section
  * Testimonial Section
+
+## Quotation Page
+
+The quotation page contains a form which allows page visitors to insert booking details for a bus.
