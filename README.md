@@ -5,6 +5,12 @@
 2. Quotation Page
 3. Contact Us Page
 
+## Sections Maintained
+
+* Header (Navigation and Logo)
+* Newsletter
+* Footer
+
 ## Home Page
 
 The home page contains the basic details of the company. These include:
@@ -37,3 +43,15 @@ The quotation page contains a form which allows page visitors to insert booking 
 |  | Drop-off Address |
 | Bus Details | Bus Seats (e.g 30 seater) |
 | Submit | Generate Quotation Button |
+
+## Contact Us Page
+
+The contact us page comprises of a form that allows users to insert their details and submit for them to be contacted.
+
+The following are the inputs contained in the contact us form:
+* Contact Name
+* Contact Surname
+* Contact Email Address
+* Contact Number
+* Text Area
+
