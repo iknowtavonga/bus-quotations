@@ -12,8 +12,28 @@ The home page contains the basic details of the company. These include:
  * Company Mission
  * Company vision
  * Newsletter subscription section
+ * Showcase Cover
  * Testimonial Section
+ * Footer
 
 ## Quotation Page
 
-The quotation page contains a form which allows page visitors to insert booking details for a bus.
+The quotation page contains a form which allows page visitors to insert booking details for a bus. The form was seperated into different sections. 
+
+### The table below shows the form sections and inputs that are in the sections
+| Section | Inputs |
+| ----------- | ----------- |
+| Company Details | Company Name input box |
+|  | Company Registration Number |
+|  | Tax Number |
+| Contact Details | Contact Name |
+|  | Contact Surname |
+|  | Contact Email |
+|  | Contact Number |
+| Trip Details | First Pickup Date |
+|  | Second Pickup date |
+|  | Pickup Time |
+|  | Pickup Address |
+|  | Drop-off Address |
+| Bus Details | Bus Seats (e.g 30 seater) |
+| Submit | Generate Quotation Button |
