@@ -60,21 +60,21 @@ The following are the inputs contained in the contact us form:
 The navbar was particularly difficult because i had not leartn flexbox yet therefore i relied on floats to move my navigation content. This seemed like a good resolution until the navigation links started getting kicked out of the header section. A fix to this was to make sure the nav links were structured before the logo in html. 
 
 The following code shows html code of how i did it:
-```
-        <header>
-            <div class="container">
-                <nav class="navigation">
-                    <ul>
-                        <li class="currentPage"><a href="index.html">Home</a></li>
-                        <li><a href="quotation.html">Quotation</a></li>
-                        <li><a href="schedule.html">Schedule</a></li>
-                    </ul>
-                </nav>
-                <div id="logo">
-                    <h1>Buscorp</h1>
-                </div>
-            </div>
-        </header>
+```html
+<header>
+    <div class="container">
+        <nav class="navigation">
+            <ul>
+                <li class="currentPage"><a href="index.html">Home</a></li>
+                <li><a href="quotation.html">Quotation</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </nav>
+        <div id="logo">
+            <h1>Buscorp</h1>
+        </div>
+    </div>
+</header>
 ```
 
 #### Working Solution
@@ -82,18 +82,18 @@ The following code shows html code of how i did it:
 The above solution was only temporary and it didn't work as well as i wanted it to so i went on to learn flexbox so i can find a fix for it. The best solution was found on [THIS](https://www.youtube.com/watch?v=PwWHL3RyQgk&t=494s) video. 
 
 The following html code shows how i ended up fixing the navbar:
-```
-      <header>
-            <a href="index.html"><h1 id="logo">S-Transit</h1></a>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="currentPage"><a href="quotation.html">Quotation</a></li>
-                    <li><a href="schedule.html">Schedule</a></li>
-                </ul>
-            </nav>   
-            <a class="contactButton" href="contact.html"><button>Contact Us</button></a>        
-      </header>  
+```html
+<header>
+    <a href="index.html"><h1 id="logo">S-Transit</h1></a>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="currentPage"><a href="quotation.html">Quotation</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+        </ul>
+    </nav>   
+    <a class="contactButton" href="contact.html"><button>Contact Us</button></a>        
+</header>  
 ```
 
 As you can see, the logo is now about the navigation links.
