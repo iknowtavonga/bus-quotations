@@ -1,4 +1,4 @@
-# Bus Company Quotation Form
+;# Bus Company Quotation Form
 
 ## Project Purpose
 This project was made to test my knowledge on the basic structure of a website in html and css. It serves as my first full length project started from scratch. Since this prject was a test of my knowledge, i used as little help resources as i could with the exception of debugging some css features such as the broken navbar. And assistance with flexbox. 
